@@ -48,7 +48,7 @@
 }
 
 .button-styled:hover {
-    background-color: rgba(255, 68, 0, 0.637);
+    background-color: #ffdecb;
     cursor: pointer;
 }
 
