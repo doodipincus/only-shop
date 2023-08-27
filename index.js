@@ -495,7 +495,9 @@ function constructorCard(element) {
 
     deleteIcon.addEventListener('click', () => {
         if (confirm("Delete Product?") === true) {
-            deleteIcon.parentElement.parentElement.remove()
+            // deleteIcon.parentElement.parentElement.remove()
+            // לשנות את צורת המחיקה
+            data.splice(element, 1)
             
         }
     })
