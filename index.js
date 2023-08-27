@@ -495,10 +495,8 @@ function constructorCard(element) {
 
     deleteIcon.addEventListener('click', () => {
         if (confirm("Delete Product?") === true) {
-            // deleteIcon.parentElement.parentElement.remove()
-            // לשנות את צורת המחיקה
-            listObject.splice(i, 1)
-            
+            deleteIcon.parentElement.parentElement.remove()
+            data.splice(element, 1)          
         }
     })
 
@@ -612,13 +610,9 @@ function constructor(listObject) {
     div1.replaceChildren()
     addProduct.style.display = 'none'
 
-    for (let i = 0; i < listObject.length; i++) {
-        const element = listObject[i];
-        constructorCard(element);
-        
-    }
-    // listObject.forEach(element => {
-    // });
+    listObject.forEach(element => {
+            constructorCard(element);
+    });
 }
 
 function categories(category) {
